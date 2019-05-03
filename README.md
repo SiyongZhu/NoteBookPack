@@ -19,7 +19,7 @@ mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 add following to ~/.bash_profile
 export PATH="~/.npm-global/bin:$PATH"
-source ~/.profile
+source ~/.bash_profile
 npm install -g @angular/cli
 ```
 

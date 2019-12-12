@@ -20,6 +20,7 @@ Exit db container, copy data in container to local host \
 
 
 **Install Angular to Mac**
+
 I have some issue install angular on Mac, follow the steps in here to resolve installation issues
 
 First, download node js package from node js website, install to Mac

@@ -15,7 +15,8 @@ $ docker exec -it my_mysqldb mysql -ppassword
 Once bash into mysql db container, run \
 `mysql -ppassword [db_name]  -e 'SELECT * FROM Table;' > /tmp/data.txt` \
 Exit db container, copy data in container to local host \
-`$docker cp <containerId>:/tmp/data.txt /host/path/target`
+`$docker cp <containerId>:/tmp/data.txt /host/path/target` \
+
 
 
 **Install Angular to Mac**

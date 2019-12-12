@@ -10,6 +10,14 @@ $ docker run -d --name my_mysqldb --volumes-from vc_mysqldata -e MYSQL_ROOT_PASS
 $ docker exec -it my_mysqldb mysql -ppassword
 ```
 
+# How to unload data from mySQL to local host
+`$docker exec -it my_mysqldb bash`
+Once bash into mysql db container, run
+`mysql -ppassword [db_name]  -e 'SELECT * FROM Table;' > /tmp/data.txt`
+Exit db container, copy data in container to local host
+`$docker cp <containerId>:/tmp/data.txt /host/path/target`
+
+
 **Install Angular to Mac**
 I have some issue install angular on Mac, follow the steps in here to resolve installation issues
 
